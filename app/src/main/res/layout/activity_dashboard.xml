@@ -1,0 +1,35 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_home_layout"
+    style="@style/match">
+
+
+    <LinearLayout
+        style="@style/match"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/container_toolbar"
+            style="@style/matchWidth"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/toolbar" />
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:id="@+id/content_frame"
+            style="@style/match" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_home_left_drawer"
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left|start"
+        android:background="@android:color/white"
+        android:choiceMode="singleChoice" />
+
+</android.support.v4.widget.DrawerLayout>
